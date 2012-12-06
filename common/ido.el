@@ -1,0 +1,7 @@
+(ido-mode)
+(setq ido-show-dot-for-dired t)
+(setq ido-default-file-method 'selected-window)
+(setq ido-default-buffer-method 'selected-window)
+(setq ido-enable-flex-matching t)
+(setq ido-use-filename-at-point nil)
+(setq ido-enable-tramp-completion nil)
