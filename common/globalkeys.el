@@ -14,6 +14,7 @@
 (global-set-key (kbd "C-x wc") 'delete-window)
 (global-set-key (kbd "C-x ws") 'split-window)
 (global-set-key (kbd "C-x wv") 'split-window-horizontally)
+(global-set-key (kbd "C-x wf") 'flip-windows)
 
 (global-set-key (kbd "C-x g") 'rgrep)
 
