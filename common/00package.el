@@ -11,6 +11,7 @@
 			      go-mode
 			      zenburn-theme
 			      color-theme-solarized
+			      magit
 			      bm))
       
 (package-initialize)
