@@ -8,3 +8,7 @@
 (toggle-truncate-lines 1)
 
 (show-paren-mode t)
+
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward)
+
