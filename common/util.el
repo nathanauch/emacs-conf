@@ -5,8 +5,8 @@
   (next-line))
 (defun vi-open-prev-line ()
   (interactive)
-  (previous-line)
-  (vi-open-next-line))
+  (move-beginning-of-line 1)
+  (open-line 1))
 
 (global-set-key (kbd "C-o") 'vi-open-next-line)
 (global-set-key (kbd "C-S-o") 'vi-open-prev-line)
