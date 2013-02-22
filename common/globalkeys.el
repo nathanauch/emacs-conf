@@ -17,6 +17,7 @@
 (global-set-key (kbd "C-x wf") 'flip-windows)
 
 (global-set-key (kbd "C-x g") 'rgrep)
+(global-set-key (kbd "C-x f") 'find-name-dired)
 
 (global-set-key (kbd "C-x n") 'next-error)
 (global-set-key (kbd "C-x p") 'previous-error)
@@ -40,3 +41,11 @@
 (global-set-key (kbd "M-n") 'smart-symbol-go-forward)
 (global-set-key (kbd "M-p") 'smart-symbol-go-backward)
 
+(global-set-key (kbd "C-x >") '(lambda (start end)
+				 (interactive "r" )
+				 (indent-rigidly start end 4)))
+(global-set-key (kbd "C-x <") '(lambda (start end)
+				 (interactive "r" )
+				 (indent-rigidly start end -4)))
+
+(global-set-key (kbd "C-/") 'replace-regexp)
