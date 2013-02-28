@@ -27,6 +27,7 @@
 (global-set-key (kbd "C-c br") 'bm-bookmark-regexp)
 (global-set-key (kbd "C-c bl") 'bm-show)
 (global-set-key (kbd "C-c ba") 'bm-bookmark-annotate)
+(global-set-key (kbd "C-c bt") 'bm-toggle)
 
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
