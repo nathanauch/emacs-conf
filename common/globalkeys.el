@@ -32,7 +32,14 @@
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
 
-(global-set-key (kbd "C-z") 'eshell)
+(global-set-key (kbd "C-z") (lambda (&optional arg)
+			      (interactive "P")
+ 			      (let ((d (file-name-directory (buffer-file-name))))
+				(eshell)
+				(when arg
+				  (eshell/cd d)
+				  (eshell-send-input)))))
+
 (add-hook 'eshell-mode-hook
       (lambda ()
         (local-set-key (kbd "C-z") 'bury-buffer)))
