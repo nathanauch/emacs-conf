@@ -57,3 +57,6 @@
 				 (indent-rigidly start end -4)))
 
 (global-set-key (kbd "C-/") 'replace-regexp)
+
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)

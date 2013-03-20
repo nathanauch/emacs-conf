@@ -11,7 +11,8 @@
 			      go-mode
 			      zenburn-theme
 			      magit
-			      bm))
+			      bm
+			      smex))
 (package-initialize)
 
 (mapcar (lambda (pkg)
