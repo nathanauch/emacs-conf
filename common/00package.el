@@ -9,7 +9,7 @@
 			      yasnippet
 			      projectile
 			      go-mode
-			      zenburn-theme
+			      leuven-theme
 			      magit
 			      bm
 			      smex))

@@ -1,4 +1,4 @@
-(load-theme 'zenburn t)
+(load-theme 'leuven t)
 
 (set-frame-font
  (cond ((eq system-type 'windows-nt) "Consolas-11")
