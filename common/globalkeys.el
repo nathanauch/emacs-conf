@@ -34,11 +34,12 @@
 
 (global-set-key (kbd "C-z") (lambda (&optional arg)
 			      (interactive "P")
- 			      (let ((d (file-name-directory (buffer-file-name))))
-				(eshell)
-				(when arg
-				  (eshell/cd d)
-				  (eshell-send-input)))))
+			      (if arg
+				  (let ((d (file-name-directory (buffer-file-name))))
+				    (eshell)
+				    (eshell/cd d)
+				    (eshell-send-input))
+				(eshell))))
 
 (add-hook 'eshell-mode-hook
       (lambda ()
